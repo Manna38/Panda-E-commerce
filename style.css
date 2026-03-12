@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.logo img {
+    width: 150px;
+    mix-blend-mode: multiply;
+}
+
+.menu {
+    font-size: 28px;
+    cursor: pointer;
+
+
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #dbb6b6;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.price {
+    color: #ff2d6f;
+    margin: 15px 0;
+}
+
+.btn {
+    background: #ff2d6f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero-img img {
+    width: 350px;
+    mix-blend-mode: multiply;
+}
+
+/* Section */
+
+.section-title {
+    margin: 40px 0 20px;
+    font-size: 28px;
+}
+
+/* Categories */
+
+.categories {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.category {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+
+}
+
+.category img {
+    width: 70px;
+    mix-blend-mode: multiply;
+}
+
+.watch {
+    background: #f59e0b;
+}
+
+.bag {
+    background: #ff2d6f;
+}
+
+.shoes {
+    background: #4f46e5;
+}
+
+/* Products */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-bottom: 80px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card img {
+    width: 180px;
+    margin: auto;
+    mix-blend-mode: multiply;
+    margin-top: 10px;
+    
+  
+}
+
+.card p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+    margin-top: 20px;
+}
+.card h4{
+    font-weight: bold;
+   font-size: 20px;
+   margin-bottom: 10px;
+ 
+}
+
+.buy {
+    background: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   display: block;
+   margin: auto;
+   margin-top: 10px;
+
+}
+
+/* Newsletter */
+
+.newsletter {
+    background: #f6eaea;
+    padding: 100px 20px;
+    margin: 80px auto;
+    text-align: center;
+    border-radius: 15px;
+    width: 40%;
+
+
+
+}
+
+.subscribe {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe input {
+    padding: 20px;
+    width: 400px;
+    border: none;
+    outline: none;
+}
+
+.subscribe button {
+    padding: 12px 25px;
+    border: none;
+    background: #de245f;
+    color: white;
+    font-size: 20px;
+}
+
+/* Responsive */
+
+@media(max-width:992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+}
